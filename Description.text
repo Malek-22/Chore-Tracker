@@ -1,0 +1,77 @@
+Chore Tracker is a simple web application built with Java, Spring Boot, and MySQL that helps users manage and track household chores. Users can register, log in, and see a dashboard displaying all available chores along with their own personal list of jobs. They can add new chores by providing a title, description, and location, with validation ensuring meaningful input. Each chore can be viewed in detail, added to a personal list, edited, marked as done, or canceled if posted by the user. The application stores users, jobs, and user-job relationships in a MySQL database, enabling a full-stack experience with authentication, CRUD operations, and relational data management.
+
+I will build it using:
+
+Java and Spring Boot for the backend
+
+MySQL for the database
+
+Basic HTML/CSS/JS for the frontend
+
+Features
+User Registration and Login
+
+Users can register with name, email, and password
+
+Login requires email and password
+
+Input validations work for both flows
+
+Dashboard
+
+Displays all available chores (jobs) with their titles and locations
+
+Users see two lists:
+
+All available jobs
+
+Jobs they have added to their personal list
+
+Users can:
+
+View details of a job
+
+Add a job to their personal list
+
+Edit or cancel jobs if they posted them
+
+Mark jobs as done (removes them from their list)
+
+Add Job
+
+Users can create new chores with title, description, and location
+
+Validation:
+
+Title > 3 characters
+
+Description > 10 characters
+
+Location cannot be blank
+
+On success, user returns to the dashboard
+
+View Job
+
+Shows all details about a specific job
+
+Allows adding the job to the user’s personal list
+
+Edit Job
+
+Only the user who posted a job can edit it
+
+Fields are pre-filled with existing data
+
+Same validation rules as Add Job
+
+On success, returns to dashboard
+
+Database
+You will store:
+
+Users
+
+Jobs
+
+Relationships between users and their personal jobs
